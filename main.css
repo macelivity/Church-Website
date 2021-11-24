@@ -1,0 +1,147 @@
+*{
+    --background-color: #d2dee9;
+    --frame-background: #206acf;
+    --button-background: #38ace9;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+}
+
+header{
+    display: grid;
+    grid: 'icon title empty';
+}
+
+body{
+    min-height: 100vh;
+    margin: 0px 1vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+article{
+    margin: 3vw 5vw;
+}
+
+.mainIcon{
+    grid-area: icon;
+
+    width: 240px;
+
+    margin-top: 0.5vw;
+    margin-left: 1.2vw;
+}
+
+.titleText{
+    font-size: 36px;
+    text-decoration: underline;
+    text-align: center;
+
+    grid-area: title;
+
+    margin-bottom: 6px;
+    margin-right: 240px;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: center;
+
+    padding: 1.1vw;
+
+    margin-left: 50%;
+    margin-right: 5%;
+}
+
+.navbarEntity{
+    text-decoration: none;
+
+    color: black;
+
+    padding: 0.25vw 0.5vw;
+
+    border: 0.12vw;
+    border-style: solid;
+    border-color: var(--button-background);
+
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+
+.mapsFrame{
+    width: 32vw;
+    height: 24vw;
+}
+
+
+footer{
+    background-color: var(--frame-background);
+
+    min-height: 8vh;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-direction: row;
+
+    padding: 0.6vw 8vw;
+
+    margin: 1vw;
+    margin-top: auto;
+    margin-bottom: 0px;
+}
+
+.footerEntity{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+
+    background-color: var(--button-background);
+
+    padding: 0.4vw 0.6vw;
+
+    margin: 1.2vw 2vw;
+}
+
+.footerIconLink{
+    background-color: inherit;
+
+    height: 30px;
+}
+
+
+.footerIconShell{
+    background-color: inherit;
+    
+    margin-right: 1.5vw;
+}
+
+
+.tempBodySpace{
+    margin-top: 10%;
+    margin-bottom: 12%;
+}
+
+/* Small width device support */
+@media (max-width: 800px){
+    .header{
+        grid:
+        'icon'
+        'title';
+    }
+    
+    .titleText{
+        margin-bottom: 15px;
+        margin-right: 0px;
+    }
+
+    .mapsFrame{
+        width: 72vw;
+        height: 54vw;
+    }
+}
